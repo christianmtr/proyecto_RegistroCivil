@@ -1,22 +1,22 @@
 'use strict';
 
-app.controller('EmpleadoCtrl', ['$scope','$http',
+app.controller('RegistrosCtrl', ['$scope','$http',
 	function($scope,$http) {
-		$scope.Titulo = 'Listado de usuarios general';
+		$scope.Titulo = 'Registro de datos';
 
-		$scope.empleados = [];
+		$scope.registros = [];
 
-		$scope.listarEmpleados =
+		$scope.listarMatrimonios =
 			function() {
-				var result = $http.post('controller-be/EmpleadoCtrl.php',{accion: 'listar'});
+				var result = $http.post('controller-be/MatrimoniosCtrl.php',{accion: 'listar'});
 				result.success(
 					function(data){
-						$scope.empleados = [];
+						$scope.registros = [];
 						// alert(data);
-						$scope.empleados = data;
+						$scope.registros = data;
 					}
 				)
 			}
-		$scope.listarEmpleados();
+		$scope.listarMatrimonios();
 	}
 	]);
