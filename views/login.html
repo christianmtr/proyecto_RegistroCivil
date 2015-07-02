@@ -1,0 +1,19 @@
+<h1>Acceso de usuarios</h2>
+<div class="row" id="cuerpo">
+    <div class="col-md-3 col-md-offset-3" id="foto_user">
+        <img id="usr_img" src=<?php echo $ruta; ?> />
+    </div>
+    <div class="col-md-3" id="formulario">
+        <form class="form-horizontal" id="formu" action="">
+            <div class="form-group">
+                <label class="col-sm-2 control-label" id="lbl_user">Usuario:</label><input class="form-control"  type="text" id="txt_usuario" required >
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label" id="lbl_pass">Password:</label><input class="form-control"  type="password" id="txt_pass" required >
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Entrar" class="btn btn-default btn-lg" id="btn_entrar">
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,1 +1,20 @@
-<h2>Busca matrimonios aquí!</h2>
+<h2>Consulta de Actas matrimoniales</h2>
+
+<form class="form-horizontal" id="formu" action="">
+    <div class="form-group">
+    	<h4>Datos del titular</h4>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-4 control-label" id="lbl_user">DNI:</label><input class="form-control"  type="text" id="txt_apPat" >
+    </div>
+    <!--
+    <div class="form-group">
+        Aquí omití el los campos de apellidos y nombres porq con el dni de uno de los conyugues
+        se puede buscar, una busqueda por nombres sería inecesario.
+    </div>
+    -->
+    <div class="form-group">
+        <input type="submit" value="Consultar" class="btn btn-default btn-lg" id="btn_consultar">
+        <input type="submit" value="Limpiar" class="btn btn-default btn-lg" id="btn_limpiar">
+    </div>
+</form>

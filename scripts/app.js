@@ -9,7 +9,7 @@ app.config(function($routeProvider)
 		$routeProvider
 			.when('/',
 			{
-				redirectTo: '/home'
+				redirectTo: '/login'
 			})
 			.when('/reg_nacimiento',
 			{
@@ -41,9 +41,9 @@ app.config(function($routeProvider)
 				templateUrl: 'views/busca_defuncion.html'
 				,controller: 'BuscarCtrl'
 			})
-			.when('/home',
+			.when('/login',
 			{
-				templateUrl: 'views/home.html'
+				templateUrl: 'views/login.html'
 				,controller: ''
 			})
 			.otherwise(

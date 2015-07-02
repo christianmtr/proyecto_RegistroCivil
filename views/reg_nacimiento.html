@@ -1,1 +1,93 @@
-<h2>Aquí registramos nacimientos!</h2>
+<h2></h2>
+<fieldset>
+<legend>Datos de la Acta de Nacimiento</legend>
+<table>
+    <tr>
+        <td>
+            <label>Fecha del Nacimiento</label>
+        </td>
+        <td>
+            <input type="date" name="fecha" id="fecha" required="">
+        </td>
+        <td>
+            <label for="hora">Hora:</label>
+        </td>
+        <td>
+            <input type="text" name="hora" placeholder = "24:00" id="hora" required pattern="([0-9:]{5})" maxlength="5"/>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3">Lugar de Nacimiento</td>
+    </tr>
+    <tr>
+        <td>
+            <label for="depa">Departamento : </label>
+        </td>
+        <td>
+            <input type="text" name="depa" id="depa" required/>
+        </td>
+        <td>
+            <label for="prov">Provincia : </label>
+        </td>
+        <td>
+            <input type="text" name="prov" id="prov" required/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="Dist">Distrito : </label>
+        </td>
+        <td>
+            <input type="text" name="Dist" id="Dist" required/>
+        </td>
+        <td>
+            <label for="CP">Centro Poblado : </label>
+        </td>
+        <td>
+            <input type="text" name="CP" id="CP" />
+        </td>
+
+    </tr>
+
+</table>
+
+</fieldset>
+<br>
+<fieldset>
+<legend>  Datos del Niño</legend>
+<table>
+    <tr>
+        <td><label>Sexo</label></td>
+        <td>
+            <SELECT NAME="sexo" SIZE="1">  
+                <OPTION VALUE="hom">Hombre</OPTION>
+                <OPTION VALUE="muj">Mujer</OPTION>
+            </SELECT> 
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>Nombre</label>
+        </td>
+        <td>
+            <input type="text" name="nombre" placeholder = "Ingrese el Nombre" id="nombre" required="" pattern="[A-Za-z]*"/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>Apellidos Paterno</label>
+        </td>
+        <td>
+            <input type="text" name="apellip" 
+                   placeholder = "Ingrese el Apellido Paterno" id="apellip" required="" pattern="[A-Za-z]*"/>
+        </td>
+        <td>
+            <label>Apellidos Materno</label>
+        </td>
+        <td>
+            <input type="text" name="apellim" 
+                   placeholder = "Ingrese el Apellido Materno" id="apellim" required="" pattern="[A-Za-z]*"/>
+        </td>
+    </tr>
+</table>
+</fieldset>

@@ -1,8 +1,8 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: Jiner
- * Date: 29/11/14
+ * User: ChristianM.
+ * Date: 01/07/2015
  * Time: 02:09 AM
  */
 
@@ -12,7 +12,7 @@ class ClsConexion
     private static $db_user = 'root';
     private static $db_pass = '';
     protected $db_driver = 'mysql';
-    protected $db_name = 'empleado';
+    protected $db_name = 'civil';
     protected $query;
     protected $rows = array();
     private $conn;

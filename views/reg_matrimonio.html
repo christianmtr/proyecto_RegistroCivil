@@ -1,1 +1,132 @@
-<h2>Aquí registramos matrimonios! xD</h2>
+<h2>Registros de Actas matrimonial</h2>
+<h3  class="form-signin-heading">Regisrtro de Acta Matrimonial</h3>
+<fieldset>
+    <legend>Datos de la Acta</legend>   
+    <table style="width:980px; margin:auto;">
+        <tr>
+            <td>
+                <label> Numero de la Acta</label>
+            </td>
+            <td>
+                <input type="text" name="numA" id="numA" placeholder = "Ingrese el Num.Acta" 
+                       required="" pattern="\w{10}" maxlength="10" title="Enter 10 characters">
+            </td>
+            <td>
+                <label>Fecha de Celebración:</label>
+            </td>
+            <td>
+                <input type="date" name="fecha1" id="fecha" required placeholder = "Ingrese el Fecha"/>
+            </td>
+            <td>
+                <label>Hora:</label>
+            </td>
+            <td>
+                <input type="text" name="hora" placeholder = "24:00" id="hora" required pattern="([0-9:]{5})" maxlength="5"/>
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>
+                <label>Departamento : </label>
+            </td>
+            <td>
+                <input type="text" name="depa" id="depa" required/>
+            </td>
+            <td>
+                <label>Provincia : </label>
+            </td>
+            <td>
+                <input type="text" name="prov" id="prov" required/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Disrito : </label>
+            </td>
+            <td>
+                <input type="text" name="Dist" id="Dist" required/>
+            </td>
+            <td>
+                <label>Centro Poblado : </label>
+            </td>
+            <td>
+                <input type="text" name="CP" id="CP" />
+            </td>
+        </tr>
+        <tr>
+            <td colspan=3 >Autoridad Civil</td>
+        </tr>
+        <tr>
+            <td>	
+                <label>Nombre del Autoridad:</label>
+            </td> 
+            <td> <input type="text" name="nomAut" id="nomAut" required pattern="([a-zA-Z ]{5,30})"/></td>
+            <td>	
+                <label>Cargo:</label>
+            </td> 
+            <td> <input type="text" name="carg" id="carg" required pattern="([a-zA-Z ]{5,30})"/></td>
+            <td>	
+                <label>Cédula: </label>
+            </td> 
+            <td> <input type="text" name="ced" id="ced" required pattern="([a-zA-Z ]{5,30})"/></td>
+        </tr>
+    </table>
+</fieldset>
+<fieldset>
+<legend>Datos de la Hombre</legend>
+<table>
+    <tr>
+        <td>
+            <label for="DocI1">Doc. de Identidad:</label>
+        </td>
+        <td>
+            <SELECT NAME="selCombo1" SIZE="1"> 
+                <OPTION VALUE="DNI1">DNI</OPTION>
+                <OPTION VALUE="Pasaporte1">Pasaporte</OPTION>
+                <OPTION VALUE="CNI1">CNI</OPTION>
+            </SELECT> 
+        </td>
+        <td>
+            <input type="text" name="DOCi" id="DOCi" required pattern="([0-9]{1,8})"/></td>
+        </td>
+    </tr>
+    <tr>
+        <td>	
+            <label for="ApePa">Apellido Paterno:</label>
+        </td> 
+        <td>	
+            <input type="text" name="ApePa1" id="ApePa" required pattern="([a-zA-Z ]{5,30})"/></td>
+       
+        <td>	
+            <label for="ApeMa">Apellido Materno:</label>
+        </td> 
+        <td>	
+            <input type="text" name="ApeMa1" id="ApeMa" required pattern="([a-zA-Z ]{5,30})"/></td>
+    </tr>
+    <tr>
+        <td>	
+            <label for="Nombres">Nombre Completo:</label>
+        </td> 
+        <td>	
+            <input type="text" name="Nombres1" id="Nombres" required pattern="([a-zA-Z ]{5,30})"/>
+        </td>
+       
+    </tr>
+    <tr>
+        <td>	
+            <label for="ocupa">Ocupación:</label>
+        </td> 
+        <td>	
+            <input type="text" name="ocupa1" id="ocupa" required pattern="([a-zA-Z ]{5,30})"/></td>
+        
+        <td>	
+            <label for="Tele">Telefono:</label>
+        </td> 
+        <td>	
+            <input type="text" name="Tele1" id="Tele" required pattern="([0-9]{1,9})"/>
+        </td>
+    </tr>
+</table>
+</fieldset>
+</fieldset>
